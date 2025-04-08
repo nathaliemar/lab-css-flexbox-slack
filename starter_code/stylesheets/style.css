@@ -8,3 +8,198 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+/* STYLES */
+
+/*  Fonts */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #540b51;
+  color: #000000;
+  font-size: 16px;
+  line-height: 1.5;
+  width: 100vw;
+}
+
+/* Basic styles */
+body {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+small {
+  color: #454245;
+}
+.btn {
+  background-color: #540b51;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: 30px;
+  text-transform: uppercase;
+  height: 50px;
+}
+.btn-white {
+  border-color: #540b51;
+  background-color: white;
+  color: #540b51;
+}
+.btn-purple {
+  border: solid 2px white;
+}
+.btn-blue {
+  background-color: #4285f4;
+  color: white;
+  display: flex;
+}
+
+/*  Font sizes */
+h1 {
+  font-size: 4em;
+  font-weight: 600;
+  color: white;
+}
+h3 {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+/*NAVIGATION*/
+
+nav {
+  background-color: #540b51;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 3% 0 3%;
+}
+
+.nav-links {
+  display: none;
+  flex-direction: row;
+}
+.nav-links ul {
+  list-style: none;
+}
+.nav-links ul li {
+}
+.nav-right {
+}
+.nav-cta {
+  display: none;
+}
+
+/*HEADER - HERO*/
+header {
+  background-color: #540b51;
+  padding: 0 3% 0 3%;
+}
+
+.hero-text {
+}
+.signups {
+}
+.email-signup-btn {
+}
+.google-logo {
+  background-color: gray;
+  width: 12%;
+  display: flex;
+}
+.google-logo img {
+  width: 15%;
+}
+.hero-image > img {
+  height: 50vh;
+}
+.hero-text p {
+  color: white;
+}
+.orange {
+  color: #ecb12f;
+}
+/*MAIN SECTION*/
+main {
+  padding: 0 3% 0 3%;
+}
+.customer-logos {
+  background-color: #f3eae2;
+}
+.customer-logos p {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.logos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logos-container img {
+  display: flex;
+  max-width: calc(100% / 4);
+  max-height: 50px;
+  margin: 10px;
+}
+.pitch {
+  background-color: white;
+}
+.pitch h3 {
+  color: #540b51;
+}
+.stats {
+}
+.stats span {
+  color: #540b51;
+}
+.stat-text {
+  font-weight: bold;
+}
+.cta {
+  display: flex;
+  flex-direction: column;
+}
+.cta h3 {
+  color: white;
+}
+
+/*FOOTER*/
+footer {
+  background-color: white;
+  padding: 0 3% 0 3%;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-weight: bold;
+}
+.footer-links li:last-child {
+  color: #2e71a6;
+}
+.line-before-socials {
+  display: none;
+}
+.socials-container {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.disclaimer {
+  color: #454245;
+}
