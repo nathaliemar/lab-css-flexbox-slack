@@ -19,9 +19,14 @@ body {
   font-size: 16px;
   line-height: 1.5;
   width: 100vw;
+  overflow-x: hidden;
+  line-height: normal;
 }
 
 /* Basic styles */
+* {
+  box-sizing: border-box;
+}
 body {
   text-align: center;
   padding: 0;
@@ -33,7 +38,7 @@ ul {
   padding: 0;
 }
 small {
-  color: #454245;
+  color: ##7c7c7c;
 }
 .btn {
   background-color: #540b51;
@@ -44,7 +49,7 @@ small {
   font-size: 1em;
   font-weight: bold;
   text-decoration: none;
-  margin-top: 30px;
+  margin-top: 15px;
   text-transform: uppercase;
   height: 50px;
 }
@@ -52,9 +57,11 @@ small {
   border-color: #540b51;
   background-color: white;
   color: #540b51;
+  width: 100%;
 }
 .btn-purple {
   border: solid 2px white;
+  width: 100%;
 }
 .btn-blue {
   background-color: #4285f4;
@@ -71,6 +78,8 @@ h1 {
 h3 {
   font-size: 2em;
   font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 /*NAVIGATION*/
@@ -79,9 +88,14 @@ nav {
   background-color: #540b51;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 3% 0 3%;
+  height: 80px;
 }
-
+.slack-logo {
+  display: flex;
+  height: 2em;
+}
 .nav-links {
   display: none;
   flex-direction: row;
@@ -92,6 +106,14 @@ nav {
 .nav-links ul li {
 }
 .nav-right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-right button {
+  background-color: #540b51;
+  border-style: none;
+  border: none;
 }
 .nav-cta {
   display: none;
@@ -107,21 +129,40 @@ header {
 }
 .signups {
 }
-.email-signup-btn {
+
+.btn-google {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 .google-logo {
-  background-color: gray;
-  width: 12%;
+  position: absolute;
+  left: 1em;
   display: flex;
+  align-items: center;
 }
 .google-logo img {
-  width: 15%;
+  height: 24px;
+  width: auto;
+  background-color: white;
+}
+.btn-google span {
+  margin-right: auto;
+  flex-grow: 1;
+}
+.hero-image {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
 }
 .hero-image > img {
   height: 50vh;
 }
 .hero-text p {
   color: white;
+  font-weight: 500;
 }
 .orange {
   color: #ecb12f;
@@ -132,6 +173,8 @@ main {
 }
 .customer-logos {
   background-color: #f3eae2;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 .customer-logos p {
   text-transform: uppercase;
@@ -151,21 +194,42 @@ main {
 }
 .pitch {
   background-color: white;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 .pitch h3 {
   color: #540b51;
 }
-.stats {
+.pitch-text {
+  line-height: 1.5em;
 }
-.stats span {
+.stats li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 1em;
+}
+.stat-number {
   color: #540b51;
+  font-size: xxx-large;
+  font-weight: 600;
+  margin-bottom: 0;
+  margin-top: 0.3em;
+  padding-bottom: 0.1em;
+  line-height: 1;
 }
 .stat-text {
   font-weight: bold;
+  margin-top: 0;
+  line-height: 1;
 }
 .cta {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  padding-bottom: 3em;
+  padding-top: 2em;
 }
 .cta h3 {
   color: white;
@@ -174,19 +238,28 @@ main {
 /*FOOTER*/
 footer {
   background-color: white;
-  padding: 0 3% 0 3%;
+  padding: 20px 3% 2em 3%;
 }
 .footer-links {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   font-weight: bold;
+  line-height: 3em;
+}
+.footer-links li:nth-last-child(2) {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
 }
 .footer-links li:last-child {
+  display: flex;
+  align-items: center;
   color: #2e71a6;
+  gap: 0.5em;
 }
-.line-before-socials {
-  display: none;
+.line-before-footer {
+  border: #f4f3f4 solid 1.5px;
 }
 .socials-container {
   height: 50px;
@@ -199,7 +272,8 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
+  font-size: 1.5em;
 }
 .disclaimer {
-  color: #454245;
+  color: #7c7c7c;
 }
